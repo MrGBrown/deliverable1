@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+#orangetxt{
+    color: #ff5c0f;
+}
+
+/*Heading*/
+header {
+    background-color: #F2F2F2;
+    color: #20a8b4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+h1{
+    margin-right: auto;
+}
+
+/*Navigation*/
+li, a, button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+}
+
+header li a{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+header li a:hover {
+    color: #ff5c0f;
+}
+
+
+/*button*/
+.button{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #20a8b4;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    cursor: pointer;
+    width: auto;
+}
+
+.button:hover {
+    background-color: #ff5c0f;
+}
+
+/*Main*/
+#main{
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+}
+
+.maintxt{
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+img{
+float: right;
+ width: 100%;
+ height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    img{
+        display: none;
+    }
+
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        display: block;
+        flex-direction: column;
+    }
+
+    header li{
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .button{
+        width: 100%;
+        text-align: left;
+    }
+}
